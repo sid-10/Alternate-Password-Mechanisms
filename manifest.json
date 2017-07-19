@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Password",
+  "description": "THIS IS SPARTA!!!!!!",
+  "version": "1.0",
+
+   
+    
+    "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["./FCS to send/homepage.js","./FCS to send/script.js","./FCS to send/js/aes.js","./Sudhir/js/indexjs.js","./Sudhir/js/loginjs.js","./Sudhir/js/rollups/aes.js",
+          "./login/js/indexjs.js","./login/js/loginjs.js","./login/js/rollups/aes.js"]
+  }
+], 
+    
+  "browser_action": {
+   "default_icon": "./FCS to send/icon.png",
+   "default_popup": "basic_index.html"
+  },
+    "content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'" ,
+     
+  "permissions": [
+   "activeTab"
+   ],
+ "web_accessible_resources": [
+"./FCS to send/welcome.html",
+ "./Sudhir/login.html",
+  "./login/login.html"]
+}
